@@ -1,0 +1,66 @@
+
+h1{
+    text-align: center;
+}
+#currentGButton{
+    position:relative;
+    bottom: 200px;
+    left: 500px;
+}
+
+#currentG{
+    position:relative;
+    bottom: 217px;
+    left: 700px;
+}
+
+#finalT{
+    position: relative;
+    bottom: 200px;
+}
+
+#secondB{
+    position: relative;
+    bottom: 180px;
+    left: 500px;
+}
+
+#colorTable{
+    position: relative;
+    bottom: 200px;
+    left: 950px;
+    z-index: 99;
+    width: 30%;
+
+}
+
+#green{
+    background-color: #89ffc3;
+}
+
+#blue{
+    background-color: #a4dbff;
+}
+
+#yellow{
+    background-color: #ffef84;
+}
+
+#orange{
+    background-color: #ff6224;
+}
+
+#red{
+    background-color: #ff5151;
+}
+
+#gradeNeeded{
+    position: relative;
+    bottom: 200px;
+    left: 700px;
+}
+
+
+body{
+    background-color: mistyrose;
+}

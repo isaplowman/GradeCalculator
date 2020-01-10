@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator </title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>
+    Current and Final Exam Grade Calculator
+</h1>
+
+
+<div id = "gradeT">
+    <table id="gradeTable" border="3" cellspacing="1" cellpadding="8" align="center">
+        <tr id="titles">
+            <th>Category</th>
+            <th>Grade</th>
+            <th>Weight</th>
+        </tr>
+        <tr id="homework">
+            <td>Homework</td>
+            <td><input id="hwGrade" placeholder="Enter Your Grades out of 100" value="90,85,60"></td>
+            <td><input id="hwWeight" placeholder="Enter Weight in %" Value="15%"></td>
+        </tr>
+        <tr id="classwork">
+            <td>Classwork</td>
+            <td><input id="classGrade" placeholder="Enter Your Grades out of 100" value="90,85,60"></td>
+            <td><input id="classWeight" placeholder="Enter the Classwork Weight in %" value="15%"></td>
+        </tr>
+        <tr id="tests">
+            <td>Tests</td>
+            <td><input id="testGrade" placeholder="Enter Your Grades out of 100" value="90,85,60"></td>
+            <td><input id="testWeight" placeholder="Enter the Test Weight in %" value="15%"></td>
+        </tr>
+        <tr id="participation">
+            <td>Participation</td>
+            <td><input id="participationGrade" placeholder="Enter Your Grades out of 100" value="90,85,60"></td>
+            <td><input id="participationWeight" placeholder="Enter the Participation Weight in %" value="15%"></td>
+        </tr>
+        <tr id="projects">
+            <td>Projects</td>
+            <td><input id="projectGrade" placeholder="Enter Your Grades out of 100" value="90,85,60"></td>
+            <td><input id="projectWeight" placeholder="Enter the Project Weight in %" value="15%"></td>
+        </tr>
+
+    </table>
+</div>
+
+
+<div id="colorTable">
+<table id="colors" border="3" cellspacing="1" cellpadding="6" align = "center">
+    <tr id = "title">
+        <td>Each category will be labeled with the colors below</td>
+    </tr>
+    <tr id="green">
+        <td>Green is an A (90% or higher)</td>
+    </tr>
+    <tr id="blue">
+        <td>Blue is a B (80%-89.9%)</td>
+    </tr>
+    <tr id="yellow">
+        <td>Yellow is a C (70%-79.9%)</td>
+    </tr>
+    <tr id="orange">
+        <td>Orange is a D (60%-69.9%</td>
+    </tr>
+    <tr id="red">
+        <td>Red is a F (59.9% or lower)</td>
+    </tr>
+
+</table>
+
+</div>
+
+<div id="currentGButton">
+    <button onclick="calcCurrentGrade()">Calculate Current Grade</button>
+</div>
+
+<div id = "currentG">Current Grade is...</div>
+
+
+<div id = "finalT">
+<table id = "finalTable" border="3" cellspacing="1" cellpadding="8" align="center">
+    <tr id = "categories">
+        <th>Desired Grade</th>
+        <th>Weight of Final</th>
+    </tr>
+
+    <tr id = "data">
+        <td><input id = "desiredGrade" placeholder="Enter desired grade here" value="95"></td>
+        <td><input id = "finalWeight"  placeholder = "Enter final weight" value="20%"></td>
+    </tr>
+</table>
+</div>
+
+<div id="secondB">
+<button onclick = "calcGradeNeeded()">Calculate Final Grade Needed</button>
+</div>
+
+
+<div id = "gradeNeeded">The grade you need on your final is...</div>
+
+</body>
+</html>
